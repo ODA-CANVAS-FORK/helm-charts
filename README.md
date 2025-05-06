@@ -5,25 +5,19 @@ Build Helm Repositroies from file system charts
 
 ## install
 
+### setup repo
+
 ```
 helm repo add oda-canvas-fork https://oda-canvas-fork.github.io/helm-charts
 helm repo update
 ```
 
+### install for given domain
+
 ```
 set DOMAIN=ihc-dt.cluster-2.de
 helm upgrade --install infoservice oda-canvas-fork/canvas-info-service -n test --create-namespace --set=serverUrl=https://infoservice.%DOMAIN%
-helm upgrade --install infosvc-vs charts/virtualservices -n test --create-namespace
-```
-
-## Example
-
-### windows:
-
-```
-set DOMAIN=ihc-dt.cluster-2.de
-helm upgrade --install infoservice charts/canvas-info-service -n test --create-namespace --set=serverUrl=https://infoservice.%DOMAIN%
-helm upgrade --install infosvc-vs charts/virtualservices -n test --create-namespace
+helm upgrade --install infosvc-vs oda-canvas-fork/virtual-services -n test --set=domain=%DOMAIN%
 ```
 
 ### call in browser
