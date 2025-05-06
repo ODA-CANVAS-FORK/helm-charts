@@ -18,16 +18,16 @@ helm repo update
 
 ```
 set DOMAIN=ihc-dt.cluster-2.de
-helm upgrade --install infoservice oda-canvas-fork/canvas-info-service -n test --create-namespace --set=serverUrl=https://infoservice.%DOMAIN%
-helm upgrade --install infosvc-vs oda-canvas-fork/virtual-services -n test --set=domain=%DOMAIN%
+helm upgrade --install infoservice -n test --create-namespace oda-canvas-fork/canvas-info-service --set=serverUrl=https://infoservice.%DOMAIN%
+helm upgrade --install infosvc-vs -n test oda-canvas-fork/virtual-services --set=domain=%DOMAIN%
 ```
 
 #### tap
 
 ```
 set DOMAIN=oda-tst-1.dev.tap.telekom.de
-helm upgrade --install infoservice oda-canvas-fork/canvas-info-service -n test --create-namespace --set=serverUrl=https://infoservice.%DOMAIN%
-helm upgrade --install infosvc oda-canvas-fork/tap-ingress -n test --set=domain=%DOMAIN%
+helm upgrade --install infoservice -n test --create-namespace oda-canvas-fork/canvas-info-service --set=serverUrl=https://infoservice.%DOMAIN%
+helm upgrade --install infoservice-ing -n test oda-canvas-fork/tap-ingress --set=domain=%DOMAIN%
 ```
 
 ### call in browser

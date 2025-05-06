@@ -3,7 +3,7 @@ kind: Ingress
 metadata:
   annotations:
     cert-manager.io/cluster-issuer: {{ .Values.clusterIssuer }}
-  name: {{ .Release.Name }}-ing
+  name: {{ .Release.Name }}
 spec:
   ingressClassName: nginx
   rules:
