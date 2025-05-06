@@ -1,0 +1,2 @@
+clusterIssuer: tap-route53-issuer
+domain: oda-tst-1.dev.tap.telekom.de

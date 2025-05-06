@@ -1,0 +1,20 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  annotations:
+    cert-manager.io/cluster-issuer: {{ .Values.clusterIssuer }}
+  name: {{ .Release.Name }}-ing
+spec:
+  rules:
+  - host: infoservice.{{ .Values.domain }}
+    http:
+      paths:
+      - backend:
+          service:
+            name: info.{{ .Release.Namespace }}.svc.cluster.local
+            port:
+              number: 80
+        path: /
+        pathType: Prefix
+  tls:
+  - secretName: infoservice-tls

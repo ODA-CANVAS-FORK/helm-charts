@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: {{ .Release.Name }}-info-service
+  name: {{ .Release.Name }}-infoservice
   labels:
-    app: {{ .Release.Name }}-info-service
+    app: {{ .Release.Name }}-infoservice
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: {{ .Release.Name }}-info-service
+      app: {{ .Release.Name }}-infoservice
   template:
     metadata:
       labels:
-        app: {{ .Release.Name }}-info-service
+        app: {{ .Release.Name }}-infoservice
     spec:
       containers:
-      - name: {{ .Release.Name }}-info-service
+      - name: {{ .Release.Name }}-infoservice
         image: {{ include "serviceinventoryapi.dockerimage" . }}
         imagePullPolicy: {{ include "serviceinventoryapi.imagePullPolicy" . }}
         env:
