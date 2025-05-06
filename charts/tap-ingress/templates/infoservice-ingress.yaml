@@ -11,7 +11,7 @@ spec:
       paths:
       - backend:
           service:
-            name: info.{{ .Release.Namespace }}.svc.cluster.local
+            name: info
             port:
               number: 80
         path: /
