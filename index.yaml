@@ -11,7 +11,27 @@ entries:
     urls:
     - https://github.com/ODA-CANVAS-FORK/helm-charts/releases/download/canvas-info-service-1.0.1/canvas-info-service-1.0.1.tgz
     version: 1.0.1
+  - apiVersion: v2
+    appVersion: v1
+    created: "2025-05-06T07:42:14.723929634Z"
+    description: The Canvas Info-Service
+    digest: 6d2922f90a0767f54e0489fa71e9afeb5bc34b2ec11e0e20c26b98f3e00dbe51
+    name: canvas-info-service
+    type: application
+    urls:
+    - https://github.com/ODA-CANVAS-FORK/helm-charts/releases/download/canvas-info-service-1.0.0/canvas-info-service-1.0.0.tgz
+    version: 1.0.0
   virtual-services:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2025-05-06T07:42:14.829102914Z"
+    description: Virtual Services
+    digest: 53cd252bf2bb7de5c1b8aefc335abcbdec5d4de0f1473b948720efcde9db07c7
+    name: virtual-services
+    type: application
+    urls:
+    - https://github.com/ODA-CANVAS-FORK/helm-charts/releases/download/virtual-services-1.0.0/virtual-services-1.0.0.tgz
+    version: 1.0.0
   - apiVersion: v2
     appVersion: 0.1.0
     created: "2025-05-06T07:39:17.472846545Z"
@@ -22,4 +42,4 @@ entries:
     urls:
     - https://github.com/ODA-CANVAS-FORK/helm-charts/releases/download/virtual-services-0.1.0/virtual-services-0.1.0.tgz
     version: 0.1.0
-generated: "2025-05-06T07:39:17.472856253Z"
+generated: "2025-05-06T07:42:14.829120597Z"
