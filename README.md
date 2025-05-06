@@ -23,3 +23,10 @@ helm upgrade --install infosvc-vs oda-canvas-fork/virtual-services -n test --set
 ### call in browser
 
 https://infoservice.ihc-dt.cluster-2.de/api-docs/
+
+## uninstall
+
+```
+helm uninstall infoservice-vs -n test
+helm uninstall infoservice -n test
+```
