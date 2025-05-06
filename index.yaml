@@ -41,6 +41,28 @@ entries:
     urls:
     - https://github.com/ODA-CANVAS-FORK/helm-charts/releases/download/canvas-info-service-1.0.0/canvas-info-service-1.0.0.tgz
     version: 1.0.0
+  canvas-infoservice:
+  - apiVersion: v2
+    appVersion: v1
+    created: "2025-05-06T12:08:34.497929008Z"
+    description: The Canvas Infoservice
+    digest: 5a4534a5669edceb87ab98ac4bb700e953f233d0f41a7c032313e6afb3bea8d8
+    name: canvas-infoservice
+    type: application
+    urls:
+    - https://github.com/ODA-CANVAS-FORK/helm-charts/releases/download/canvas-infoservice-1.0.4/canvas-infoservice-1.0.4.tgz
+    version: 1.0.4
+  tap-ingress:
+  - apiVersion: v2
+    appVersion: v1
+    created: "2025-05-06T12:08:34.714472919Z"
+    description: TAP Ingress
+    digest: 06b8dc464c59d13f393f900b8844f6489b1ccc7b883f85d8cede7a3bbb2d571a
+    name: tap-ingress
+    type: application
+    urls:
+    - https://github.com/ODA-CANVAS-FORK/helm-charts/releases/download/tap-ingress-1.0.0/tap-ingress-1.0.0.tgz
+    version: 1.0.0
   virtual-services:
   - apiVersion: v2
     appVersion: v1
@@ -82,4 +104,4 @@ entries:
     urls:
     - https://github.com/ODA-CANVAS-FORK/helm-charts/releases/download/virtual-services-0.1.0/virtual-services-0.1.0.tgz
     version: 0.1.0
-generated: "2025-05-06T08:02:50.309999448Z"
+generated: "2025-05-06T12:08:34.714490792Z"
