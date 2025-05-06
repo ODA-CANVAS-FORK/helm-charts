@@ -5,6 +5,7 @@ metadata:
     cert-manager.io/cluster-issuer: {{ .Values.clusterIssuer }}
   name: {{ .Release.Name }}-ing
 spec:
+  ingressClassName: nginx
   rules:
   - host: infoservice.{{ .Values.domain }}
     http:
@@ -17,4 +18,6 @@ spec:
         path: /
         pathType: Prefix
   tls:
-  - secretName: infoservice-tls
+  - hosts:
+    - infoservice.{{ .Values.domain }}
+    secretName: infoservice-tls
