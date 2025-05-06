@@ -55,6 +55,16 @@ entries:
   tap-ingress:
   - apiVersion: v2
     appVersion: v1
+    created: "2025-05-06T12:33:24.78336696Z"
+    description: TAP Ingress
+    digest: 011b7c5c74d9c319df5655011caea6a926135439e27972b53c66c72d9ce80330
+    name: tap-ingress
+    type: application
+    urls:
+    - https://github.com/ODA-CANVAS-FORK/helm-charts/releases/download/tap-ingress-1.0.2/tap-ingress-1.0.2.tgz
+    version: 1.0.2
+  - apiVersion: v2
+    appVersion: v1
     created: "2025-05-06T12:18:43.968998815Z"
     description: TAP Ingress
     digest: 6b41862da636ce2e7d50a7344146105bc8134084c5df1ec2fadbfa7b1de80937
@@ -114,4 +124,4 @@ entries:
     urls:
     - https://github.com/ODA-CANVAS-FORK/helm-charts/releases/download/virtual-services-0.1.0/virtual-services-0.1.0.tgz
     version: 0.1.0
-generated: "2025-05-06T12:18:43.969018031Z"
+generated: "2025-05-06T12:33:24.783397798Z"
