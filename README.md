@@ -1,17 +1,20 @@
-# helm-repos
+## Usage
 
-Build Helm Repositroies from file system charts
+[Helm](https://helm.sh) must be installed to use the charts.  Please refer to
+Helm's [documentation](https://helm.sh/docs) to get started.
 
-## Example
+Once Helm has been set up correctly, add the repo as follows:
 
-### windows:
+  helm repo add <alias> https://<orgname>.github.io/helm-charts
 
-```
-set DOMAIN=ihc-dt.cluster-2.de
-helm upgrade --install infoservice charts/canvas-info-service -n test --create-namespace --set=serverUrl=https://infoservice.%DOMAIN%
-helm upgrade --install infosvc-vs charts/virtualservices -n test --create-namespace
-```
+If you had already added this repo earlier, run `helm repo update` to retrieve
+the latest versions of the packages.  You can then run `helm search repo
+<alias>` to see the charts.
 
-### call in browser
+To install the <chart-name> chart:
 
-https://infoservice.ihc-dt.cluster-2.de/api-docs/
+    helm install my-<chart-name> <alias>/<chart-name>
+
+To uninstall the chart:
+
+    helm uninstall my-<chart-name>
