@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Service
 metadata:
-	name: info  # do not use {{ .Release.Name }}-infoservice, 
+  name: info  # do not use {{ .Release.Name }}-infoservice, 
               # because the service has to be accessible under the 
               # fixed endpoint info.canvas.svc.cluster.local
   labels:
