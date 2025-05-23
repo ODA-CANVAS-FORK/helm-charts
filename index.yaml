@@ -44,6 +44,16 @@ entries:
   canvas-infoservice:
   - apiVersion: v2
     appVersion: v1
+    created: "2025-05-23T09:40:06.083942306Z"
+    description: The Canvas Infoservice
+    digest: a686af4497ed8d36b3fca438f144a5f52224e53d20f4d7bdba5921a0652a53d6
+    name: canvas-infoservice
+    type: application
+    urls:
+    - https://github.com/ODA-CANVAS-FORK/helm-charts/releases/download/canvas-infoservice-1.0.5/canvas-infoservice-1.0.5.tgz
+    version: 1.0.5
+  - apiVersion: v2
+    appVersion: v1
     created: "2025-05-06T12:08:34.497929008Z"
     description: The Canvas Infoservice
     digest: 5a4534a5669edceb87ab98ac4bb700e953f233d0f41a7c032313e6afb3bea8d8
@@ -134,4 +144,4 @@ entries:
     urls:
     - https://github.com/ODA-CANVAS-FORK/helm-charts/releases/download/virtual-services-0.1.0/virtual-services-0.1.0.tgz
     version: 0.1.0
-generated: "2025-05-06T12:44:52.560740739Z"
+generated: "2025-05-23T09:40:06.083979418Z"
